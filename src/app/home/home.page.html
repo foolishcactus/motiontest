@@ -1,20 +1,12 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+<h1>Hello!</h1>
+<img src="https://png.pngtree.com/element_our/20190531/ourmid/pngtree-up-arrow-image_1288844.jpg" [ngStyle] = "{
+  'width': '200px',
+  'height': '100px', 
+  'border': '2px white',
+}"
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+[style.transform]="'rotate('+ rotateVar + 'deg)'">
+<ion-button (click) = handleButtonClick()>StartListening</ion-button>
+<ion-button (click) = stopListeningClick()>Stop Listening</ion-button>
+<ion-button (click) = rotateCheck()>roatetCheck</ion-button>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
-</ion-content>
