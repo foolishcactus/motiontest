@@ -1,0 +1,7 @@
+{
+  "name": "motiontest",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
